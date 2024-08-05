@@ -1,6 +1,34 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="3.078027">
-<testsuite name="demo/example.spec.ts" timestamp="2024-06-04T13:49:55.077Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.56" errors="0">
-<testcase name="get started link" classname="demo/example.spec.ts" time="2.56">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="2.190127">
+<testsuite name="login/login.spec.ts" timestamp="2024-08-05T12:56:14.784Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="1.415" errors="0">
+<testcase name="Login Page Scenarios › Successful Login" classname="login/login.spec.ts" time="1.415">
+<failure message="login.spec.ts:15:7 Successful Login" type="FAILURE">
+<![CDATA[  [Google Chrome] › login/login.spec.ts:15:7 › Login Page Scenarios › Successful Login ─────────────
+
+    Error: locator.fill: value: expected string, got undefined
+
+       at ../pageObjects/login/login-page.ts:26
+
+      24 |
+      25 |     async fillCredentials(username: string, password: string) {
+    > 26 |         await this.usernameInput.fill(username);
+         |                                  ^
+      27 |         await this.passwordInput.fill(password);
+      28 |     }
+      29 |
+
+        at LoginPage.fillCredentials (/Users/shaun.sorour/Developer/QA/Playwright/pageObjects/login/login-page.ts:26:34)
+        at /Users/shaun.sorour/Developer/QA/Playwright/tests/login/login.spec.ts:17:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/login-login-Login-Page-Scenarios-Successful-Login-Google-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/login-login-Login-Page-Scenarios-Successful-Login-Google-Chrome/test-failed-1.png]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
